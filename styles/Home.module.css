@@ -51,7 +51,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin-bottom: 2rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -70,7 +70,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
@@ -82,7 +81,52 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.number {
+  height: 100px;
+  font-size: 80px;
+  text-align: center;
+}
+
+.memo {
+  margin-top: 1em;
+  font-style: italic;
+}
+
+.addQueue {
+  margin-bottom: 2em;
+}
+
+.addQueue input {
+  text-align: left;
+  color: inherit;
+  font-size: large;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  padding: .5em;
+  margin: 1em;
+  width: 500px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.addQueue button {
+  font-size: large;
+  border: transparent;
+  padding: 0.6em;
+  background: #0070f3;
+  color: white;
+  font-weight: bold;
 }
 
 .card:hover,
