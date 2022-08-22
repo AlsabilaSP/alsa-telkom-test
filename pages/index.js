@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import AddQueue from './components/addQueue'
+import { AddQueue } from './components/addQueue'
 import { Card } from './components/card'
 
 export default function Home() {

@@ -126,7 +126,15 @@
   padding: 0.6em;
   background: #0070f3;
   color: white;
+  cursor: pointer;
   font-weight: bold;
+}
+
+.addQueue button:hover {
+  border: 1px solid cyan;
+  color: #0070f3;
+  background: cyan;
+  cursor: pointer;
 }
 
 .card:hover,

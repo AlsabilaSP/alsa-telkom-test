@@ -1,40 +1,20 @@
 import React from "react";
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/Home.module.css';
+import { useDispatch } from "react-redux";
+import { increment, decrement } from "../redux/counterSlice";
 
-import { connect } from "react-redux";
+export const AddQueue = () => {
+  const dispatch = useDispatch();
 
-class AddQueue extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { input: "" };
-  }
-
-  updateInput = input => {
-    this.setState({ input });
-  };
-
-  handleAddQueue = () => {
-    // this.props.addTodo(this.state.input);
-    this.setState({ input: "" });
-  };
-
-  render() {
-    return (
-      <div className={styles.addQueue}>
-        <input
-          onChange={e => this.updateInput(e.target.value)}
-          value={this.state.input}
-        />
-        <button onClick={this.handleAddQueue}>
-          Add Queue
-        </button>
-      </div>
-    );
-  }
+  return (
+    <div className={styles.addQueue}>
+      <input
+        // onChange={e => this.updateInput(e.target.value)}
+        // value={this.state.input}
+      />
+      <button onClick={()=>dispatch(increment())}>
+        Add Queue
+      </button>
+    </div>
+  )
 }
-
-// export default connect(
-//   null,
-//   { addTodo }
-// )(AddQueue);
-export default AddQueue;
