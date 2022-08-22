@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { AddQueue } from './components/addQueue'
-import { Card } from './components/card'
+import { AddQueue } from './components/AddQueue'
+import { ListCard } from './components/Card'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h2 className={styles.title}>
-          Welcome to a Restaurant!
+          Welcome to Customer Service!
         </h2>
 
         <p className={styles.description}>
@@ -25,10 +25,7 @@ export default function Home() {
         <AddQueue />
 
         <div className={styles.grid}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <ListCard />
         </div>
       </main>
 
