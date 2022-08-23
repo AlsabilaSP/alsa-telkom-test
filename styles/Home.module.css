@@ -8,8 +8,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.anon {
+  color: red;
 }
 
 .footer {
@@ -29,7 +32,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: red;
   text-decoration: none;
 }
 
@@ -76,7 +79,8 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: white;
+  background-color: red;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
@@ -124,24 +128,25 @@
   font-size: large;
   border: transparent;
   padding: 0.6em;
-  background: #0070f3;
+  background: red;
   color: white;
   cursor: pointer;
   font-weight: bold;
 }
 
 .addQueue button:hover {
-  border: 1px solid cyan;
-  color: #0070f3;
-  background: cyan;
+  border: 1px solid pink;
+  color: red;
+  background: pink;
   cursor: pointer;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: red;
+  background-color: white;
+  border-color: red;
 }
 
 .card h2 {
@@ -158,6 +163,10 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.telkom {
+  margin: 2em;
 }
 
 @media (max-width: 600px) {

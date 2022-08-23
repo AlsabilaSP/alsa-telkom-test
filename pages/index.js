@@ -14,12 +14,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <span className={styles.telkom}>
+          <Image src="/telkom.svg" alt="Telkom Logo" width={150} height={100} />
+        </span>
+
         <h2 className={styles.title}>
-          Welcome to Customer Service!
+          Welcome to <span className={styles.anon}>Anon Customer Service!</span>
         </h2>
 
         <p className={styles.description}>
-          Input your name to get your queue number
+          Please enter your name to get your queue number. The staff will call you according to the number.
         </p>
 
         <AddQueue />
@@ -30,16 +34,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        2022 @ Alsabila Shakina Prasetyo
       </footer>
     </div>
   )
